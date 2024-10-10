@@ -1,0 +1,13 @@
+/* Replace the hex color codes with the ones from your palette */
+body {
+  background-color: #f0f0f0; /* Background color */
+  color: #333333; /* Text color */
+}
+
+a {
+  color: #0056b3; /* Link color */
+}
+
+a:hover {
+  color: #003366; /* Link color on hover */
+}
