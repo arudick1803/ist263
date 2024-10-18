@@ -1,67 +1,119 @@
-/* Basic reset */
-* {
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Style for the nav background color */
+/* Header and navigation bar */
+header {
+    background-color: #e0e0e0;
+    padding: 15px;
+    text-align: center;
+}
+
 nav {
-    background-color: #f0f0f0; 
+    background-color: #dcdcdc;
     padding: 10px;
-    margin-bottom: 30px;
+    text-align: center;
 }
 
-/* Style for nav links */
 nav a {
-    color: #333333; 
+    margin-right: 15px;
+    color: #333;
     text-decoration: none;
-    margin: 0 5px;
+    font-weight: bold;
 }
 
-/* Style for nav links on hover */
 nav a:hover {
-    background-color: #FFD700; 
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 3px;
+    text-decoration: underline;
 }
 
-/* Float logo and map iframe to align right */
-.contact-logo, iframe {
-    float: right;
-    margin: 10px;
+/* Footer styling */
+footer {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Table styling for skills page */
+/* Container styling */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid #333333;
-}
-
-th, td {
-    padding: 10px;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
     text-align: left;
 }
 
-caption {
-    font-weight: bold;
-    margin-bottom: 10px;
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
 }
 
-.evenrow {
-    background-color: #f9f9f9;
+/* Alternating background for rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-/* Main content */
-main {
-    width: 70%;
-    margin: 0 auto;
-    padding: 20px;
+/* Header styling for table */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Image in contact page */
+.contact-logo {
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Clearfix for floating elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float example */
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+/* Ensure responsive design */
+@media (max-width: 600px) {
+    .left, .right {
+        float: none;
+        width: 100%;
+    }
 }
 
