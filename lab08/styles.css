@@ -1,21 +1,39 @@
-/* Style for the nav background color */
-nav {
-    background-color: #f0f0f0; /* Replace with your chosen hex color */
-    padding: 10px;
-    margin-bottom: 30px;
+/* Centering the table */
+table {
+    width: 80%; /* Reduce width for better visual balance */
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the table and add spacing around it */
 }
 
-/* Style for nav links */
-nav a {
-    color: #333333; /* Replace with your chosen hex color for links */
-    text-decoration: none;
-    margin: 0 5px;
+th, td {
+    padding: 15px; /* Increase padding for better spacing */
+    text-align: left;
+    font-size: 1.1em; /* Increase font size for better readability */
 }
 
-/* Style for nav links on hover */
-nav a:hover {
-    background-color: #FFD700; /* Replace with your chosen hex color for hover background */
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 3px;
+th {
+    background-color: #f0f0f0; /* Add background color to table headers */
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid #cccccc; /* Use lighter border for a cleaner look */
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.3em; /* Make the caption larger and bolder */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.evenrow {
+    background-color: #f9f9f9;
+}
+
+/* Main content */
+main {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
 }
