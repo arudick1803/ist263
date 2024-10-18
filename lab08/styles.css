@@ -1,0 +1,21 @@
+/* Style for the nav background color */
+nav {
+    background-color: #f0f0f0; /* Replace with your chosen hex color */
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+/* Style for nav links */
+nav a {
+    color: #333333; /* Replace with your chosen hex color for links */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Style for nav links on hover */
+nav a:hover {
+    background-color: #FFD700; /* Replace with your chosen hex color for hover background */
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 3px;
+}
