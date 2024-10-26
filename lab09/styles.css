@@ -1,0 +1,101 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and navigation bar */
+header {
+    background-color: #e0e0e0;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #dcdcdc;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Layout for the contact page */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto;
+    gap: 20px; /* Space between rows */
+}
+
+.row {
+    display: flex;
+    gap: 20px; /* Space between columns */
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styling for address and link section */
+.address, .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Specific styling for form and map */
+.contact-form, .map {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Form styling */
+form label, form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Image in contact page */
+.contact-logo {
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
