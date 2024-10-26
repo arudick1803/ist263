@@ -1,109 +1,95 @@
-/* General styles for the body */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Header and navigation bar */
-header {
-    background-color: #e0e0e0;
-    padding: 15px;
-    text-align: center;
-}
-
-nav {
-    background-color: #dcdcdc;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    margin-right: 15px;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Step 2: Center the main heading */
-.main-heading {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Step 3: Flexbox for skills section */
-.skills-flexbox {
+/* General container for the contact page */
+.contact-container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: column;
     width: 90%;
     margin: 20px auto;
 }
 
-/* Style for skillstable container */
-.skillstable {
-    flex: 1;
+/* Row styling */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-/* Step 6: Center the table in the skillstable container */
-.skillstable table {
-    margin: 0 auto;
+/* Column styling for each item in rows */
+.column {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific column background colors */
+.address, .contact-links {
+    background-color: #f9f9f9;
+}
+
+.form-container, .map-container {
+    background-color: #e9ecef;
+}
+
+/* Space between the rows */
+.row-1 {
+    margin-bottom: 20px;
+}
+
+/* Flex properties for side-by-side layout */
+.address, .contact-links, .form-container, .map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     width: 100%;
+    box-sizing: border-box;
 }
 
-/* Style for skillsimage container */
-.skillsimage {
-    flex: 1;
-    text-align: center; /* Step 7: Center the image */
-}
-
-.skillsimage img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Table styling */
-table {
-    border-collapse: collapse;
-    font-size: 1em;
-    font-family: Arial, sans-serif;
-    border: 1px solid #ddd;
-    text-align: left;
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-}
-
-/* Alternating background for rows */
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* Header styling for table */
-th {
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
     background-color: #4CAF50;
     color: white;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-/* Hover effect for rows */
-tr:hover {
-    background-color: #ddd;
+form button:hover {
+    background-color: #45a049;
 }
 
-/* Responsive layout for smaller screens */
-@media (max-width: 600px) {
-    .skills-flexbox {
+/* Map container styling */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .row {
         flex-direction: column;
-        align-items: center;
+        gap: 0;
     }
 }
