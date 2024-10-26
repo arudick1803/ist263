@@ -31,71 +31,79 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Layout for the contact page */
-.contact-container {
+/* Step 2: Center the main heading */
+.main-heading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Step 3: Flexbox for skills section */
+.skills-flexbox {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
     width: 90%;
     margin: 20px auto;
-    gap: 20px; /* Space between rows */
 }
 
-.row {
-    display: flex;
-    gap: 20px; /* Space between columns */
-}
-
-.column {
+/* Style for skillstable container */
+.skillstable {
     flex: 1;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Specific styling for address and link section */
-.address, .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Specific styling for form and map */
-.contact-form, .map {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Form styling */
-form label, form input, form textarea, form button {
+/* Step 6: Center the table in the skillstable container */
+.skillstable table {
+    margin: 0 auto;
     width: 100%;
-    margin-bottom: 10px;
 }
 
-form button {
+/* Style for skillsimage container */
+.skillsimage {
+    flex: 1;
+    text-align: center; /* Step 7: Center the image */
+}
+
+.skillsimage img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+    text-align: left;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+/* Alternating background for rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Header styling for table */
+th {
     background-color: #4CAF50;
     color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-form button:hover {
-    background-color: #45a049;
+/* Hover effect for rows */
+tr:hover {
+    background-color: #ddd;
 }
 
-/* Image in contact page */
-.contact-logo {
-    width: 30px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-/* Responsive layout */
+/* Responsive layout for smaller screens */
 @media (max-width: 600px) {
-    .row {
+    .skills-flexbox {
         flex-direction: column;
+        align-items: center;
     }
 }
