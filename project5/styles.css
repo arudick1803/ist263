@@ -1,5 +1,5 @@
 
-/* General Reset */
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -98,7 +98,7 @@ main {
     border: 2px solid #333;
 }
 
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -173,7 +173,7 @@ p {
     margin-top: 10px;
 }
 
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -187,7 +187,7 @@ body {
     align-items: center;
 }
 
-/* Header with search and instructions */
+
 .search-section {
     display: flex;
     flex-direction: column;
@@ -219,7 +219,7 @@ body {
     cursor: pointer;
 }
 
-/* Ratings section */
+
 .ratings-section {
     width: 80%;
     max-width: 700px;
@@ -260,3 +260,4 @@ h2 {
     color: black;
     margin-right: 2px;
 }
+*/
