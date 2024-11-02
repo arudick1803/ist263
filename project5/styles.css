@@ -1,4 +1,6 @@
-
+body, h1, h2, p, div, button, input::placeholder {
+    color: white;
+}
 /* General Reset */
 * {
     margin: 0;
