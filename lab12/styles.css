@@ -1,6 +1,7 @@
-#venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune, #pluto {
+#venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune {
     display: none;
-  }
-  #venusInfo, #earthInfo, #marsInfo, #jupiterInfo, #saturnInfo, #uranusInfo, #neptuneInfo, #plutoInfo {
+}
+
+#venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo {
     display: none;
-  }
+}
