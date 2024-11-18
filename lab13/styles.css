@@ -23,12 +23,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #5c96f7;  /* Slightly lighter blue for hover */
-}
-
-/* Style for the Contact link to make it darker */
-nav a[href="contact.html"] {
-    background-color: #4b5882;  /* Darker blue/purple color */
+    background-color: #4CAF50;  /* Slightly lighter blue for hover */
 }
 
 /* Media query for desktop */
