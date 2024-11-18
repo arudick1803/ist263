@@ -6,7 +6,7 @@ body, nav {
 
 /* Navigation styling */
 nav {
-    background-color: #4287f5;  /* Light blue background */
+    background-color: #4CAF50;  /* Light blue background */
     width: 100%;
     padding: 0;
 }
@@ -153,4 +153,11 @@ tr:hover {
         flex-direction: column;
         align-items: center;
     }
+}
+
+header, .green-bar-class { /* Adjust the selector based on your structure */
+    background-color: #4CAF50; /* Green color from the table */
+    color: black; /* Ensure text remains legible */
+    padding: 10px 0; /* Optional: Adjust padding as needed */
+    text-align: center; /* Optional: Center text */
 }
