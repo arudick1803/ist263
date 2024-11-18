@@ -1,0 +1,161 @@
+/* Reset some basic elements */
+body, nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #4287f5;  /* Light blue background */
+    width: 100%;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    margin: 0;
+    border: none;
+}
+
+nav a:hover {
+    background-color: #5c96f7;  /* Slightly lighter blue for hover */
+}
+
+/* Style for the Contact link to make it darker */
+nav a[href="contact.html"] {
+    background-color: #4b5882;  /* Darker blue/purple color */
+}
+
+/* Media query for desktop */
+@media only screen and (min-width: 769px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav a {
+        flex: 0 1 auto;
+    }
+}
+
+/* Media query for mobile and tablet */
+@media only screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav a {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Media query for tablets and smaller screens */
+@media only screen and (max-width: 768px) {
+    #row2 {
+        flex-direction: column;
+    }
+}
+
+#row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto; /* Keeps the image aspect ratio */
+}
+
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Centering the main heading on the skills page */
+.main-heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+/* Flexbox for skills section */
+.skills-flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for skillstable container */
+.skillstable {
+    flex: 1;
+}
+
+/* Center the table within its container */
+.skillstable table {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Table styling */
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+/* Alternating background for rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Header styling for table */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Style for skillsimage container */
+.skillsimage {
+    flex: 1;
+    text-align: center; /* Center the image in its container */
+}
+
+.skillsimage img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive layout for smaller screens */
+@media only screen and (max-width: 600px) {
+    .skills-flexbox {
+        flex-direction: column;
+        align-items: center;
+    }
+}
