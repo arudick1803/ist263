@@ -91,8 +91,8 @@ main {
 }
 
 .top-picks .box.small-box {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border: 2px solid #333;
 }
 
@@ -211,7 +211,7 @@ body {
 .save-button {
     padding: 8px 12px;
     border: none;
-    background-color: #555;
+    background-color: #007BFF;
     color: white;
     border-radius: 12px;
     cursor: pointer;
@@ -255,7 +255,7 @@ h2 {
 }
 
 .stars span {
-    color: black;
+    color: white;
     margin-right: 2px;
 }
 /* Dropdown container */
@@ -266,7 +266,7 @@ h2 {
 
 /* Dropdown button styling */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: white;
     padding: 8px 16px;
     font-size: 16px;
@@ -300,4 +300,45 @@ h2 {
 /* Show the dropdown content when hovering over the button */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white; /* Global text color */
+}
+input[type="search"] {
+    background-color: black;
+    color: white;
+}
+.start-here-button {
+    background-color: #007BFF;
+    color: white;  /* This ensures the text stays white */
+    border: none;  /* Optional: removes any border */
+    padding: 10px 20px;  /* Adjust padding as needed */
+    border-radius: 5px;  /* Optional: rounds the corners */
+    cursor: pointer;  /* Makes the button clickable */
+}
+img {
+    width: 100%;
+    max-width: 600px; /* Ensures images don’t get too large */
+    height: auto; /* Maintains aspect ratio */
+}
+
+@media (min-width: 768px) {
+    img {
+        max-width: 800px; /* Larger images for desktop screens */
+    }
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide regular menu */
+    }
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+}
+button:hover {
+    background-color: #f0f0f0;
+    color: #333;
 }
