@@ -342,3 +342,23 @@ button:hover {
     background-color: #f0f0f0;
     color: #333;
 }
+.creepster-regular {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .cookie-regular {
+    font-family: "Cookie", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+    /* Import Google Fonts (already done in <head>) */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Creepster&display=swap');
+
+/* Apply Google Fonts to header tags */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Creepster', cursive; /* Primary font */
+    color: #ffffff; /* White text for contrast on dark background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add subtle shadow for readability */
+    margin: 10px 0; /* Add spacing between headers */
+}
