@@ -362,3 +362,95 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add subtle shadow for readability */
     margin: 10px 0; /* Add spacing between headers */
 }
+
+
+
+
+
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    header {
+        flex-direction: column; /* Stack logo and navigation vertically */
+        text-align: center;
+    }
+
+    .intro {
+        flex-direction: column; /* Stack intro elements vertically */
+        align-items: center;
+    }
+
+    .intro .box.large-box {
+        width: 100px;
+        height: 100px; /* Adjust size for smaller screens */
+    }
+
+    .intro-text h1 {
+        font-size: 18px; /* Smaller font for headers */
+    }
+
+    .intro-text p {
+        font-size: 14px; /* Smaller font for text */
+    }
+
+    .top-picks-grid {
+        flex-direction: column; /* Stack grid items vertically */
+        align-items: center;
+    }
+
+    .top-picks .box.small-box {
+        width: 100px;
+        height: 100px; /* Adjust size for smaller grids */
+    }
+
+    .content-container {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 20px;
+    }
+
+    .ratings-grid {
+        flex-direction: column; /* Stack rating items vertically */
+    }
+
+    .rating-item {
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+}
+
+/* For very small devices (phones) */
+@media (max-width: 480px) {
+    header {
+        padding: 5px 10px; /* Reduce padding for small screens */
+    }
+
+    .search-bar input {
+        width: 100%; /* Make search bar full width */
+    }
+
+    h1, h2 {
+        font-size: 16px; /* Further reduce header sizes */
+    }
+
+    .intro-text button,
+    .list-button,
+    .save-button {
+        padding: 6px 12px; /* Smaller buttons for phones */
+    }
+
+    .review-image,
+    .list-image,
+    .rating-image {
+        width: 50px; /* Adjust image sizes for small screens */
+        height: 50px;
+    }
+
+    nav button {
+        width: 100%; /* Full-width buttons for navigation */
+        margin: 5px 0; /* Add spacing between buttons */
+    }
+}
