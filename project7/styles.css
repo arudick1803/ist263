@@ -312,7 +312,7 @@ input[type="search"] {
     color: white;
 }
 .start-here-button {
-    background-color: #333;
+    background-color: #555;
     color: white;  /* This ensures the text stays white */
     border: none;  /* Optional: removes any border */
     padding: 10px 20px;  /* Adjust padding as needed */
